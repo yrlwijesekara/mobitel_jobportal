@@ -6,7 +6,10 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .container {
@@ -17,8 +20,11 @@ body {
 
 /* Header */
 .header-bg {
-    background-color: #0c1339;
+    background-color: #f1f2f7;
     padding: 10px 0;
+}
+.home-bg{
+    background-color: #0c1339;
 }
 
 .topbar {
@@ -113,13 +119,14 @@ body {
 }
 
 .job-card {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     background: #fff;
     display: flex;
     flex-direction: column;
     height: 480px; /* Set your desired fixed height */
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    font-family: 'Inter', sans-serif;
 }
 
 .job-header {
@@ -165,69 +172,106 @@ body {
     width: 60%; /* Optional: control button width */
 }
 
-/* Footer */
+
+
+/* Footer Section */
+
 .footer {
-    background-color: #f5f5f5;
-    padding: 40px 0;
-    margin-top: 40px;
-    position: relative;
+    background: #fff;
+    padding: 60px 0 40px 0;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    margin-top: 60px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px; /* reduced from 20px */
-    padding: 0 40px;
+    gap: 48px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 60px;
 }
 
 .footer-section h3 {
-    font-size: 14px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
     font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.footer-section p, .footer-section a {
-    font-size: 12px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 17px;
     color: #000;
-    display: block;
-    line-height: 1.5;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
 }
 
-.footer-section a {
+.footer-section a,
+.footer-section p {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 10px;
     text-decoration: underline;
+    display: block;
+}
+
+.footer-section p {
+    text-decoration: none;
+}
+
+.footer-logo {
+    width: 220px;
+    margin-top: 10px;
+}
+
+.customer-support-title {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.customer-support-details {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 10px;
 }
 
 .social-icons {
     display: flex;
     justify-content: flex-end;
     gap: 16px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
     margin-top: 0;
     padding-right: 0;
-    position: static;
 }
 
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     border-radius: 12px;
     background: #000;
     border: 4px solid #fff;
     transition: box-shadow 0.2s;
     box-sizing: border-box;
-    padding: 0; /* Remove padding if present */
 }
 
 .social-icon img {
-    width: 44px;
-    height: 44px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
-    /* Remove filter if your images are already white */
-    /* filter: brightness(0) invert(1); */
 }
 
 .social-icon:hover {
@@ -304,4 +348,131 @@ body {
 
 .customer-support {
     min-width: 140px;
+}
+
+
+/* About Us Section */
+
+
+.aboutus-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    padding: 80px 0 0 105px; /* left: 105px from Figma */
+    min-height: 80vh;
+    background: #fff;
+    border-radius: 40px;
+    position: relative;
+}
+
+.aboutus-content {
+    max-width: 755px; /* width from Figma */
+    margin-top: 20px;
+}
+
+.aboutus-content h1 {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 64px;
+    color: #0055A2;
+    margin-bottom: 32px;
+    backdrop-filter: blur(2px);
+}
+
+.aboutus-content p {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #101010;
+    margin-bottom: 40px;
+    backdrop-filter: blur(2px);
+}
+
+.learn-btn {
+    background: #1570ef;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 16px 36px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.learn-btn:hover {
+    background: #0e5dc4;
+}
+
+.aboutus-image {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 32px 0 32px;
+    box-shadow: 0 4px 4px rgba(241, 238, 238, 0.25);
+    max-width: 1014px; /* width from Figma */
+    max-height: 676px;  /* height from Figma */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-image img {
+    max-width: 100%;
+    max-height: 676px;
+    border-radius: 0;
+}
+
+@media (max-width: 1400px) {
+    .aboutus-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 0 0 20px;
+        gap: 32px;
+    }
+    .aboutus-image {
+        padding: 16px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutus-section {
+        padding: 24px 0 0 0;
+    }
+    .aboutus-content h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .aboutus-content p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 10px;
+    }
+    .footer {
+        padding: 30px 0 20px 0;
+        border-radius: 24px 24px 0 0;
+    }
 }
