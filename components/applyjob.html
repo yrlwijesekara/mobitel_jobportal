@@ -16,7 +16,7 @@
             </div>
             <div style="flex: 1"></div>
             <nav>
-                <a href="#">Job status</a>
+                <a href="./jobstatus.html">Job status</a>
                 <span>|</span>
                 <a href="./applyjob.html">Apply for job</a>
                 <span>|</span>
@@ -101,6 +101,7 @@
         document.querySelector('.applyjob-form').addEventListener('submit', function(e){
             e.preventDefault();
             alert('Application submitted!');
+            window.location.href = './vacancies.html';
         });
     </script>
 </body>

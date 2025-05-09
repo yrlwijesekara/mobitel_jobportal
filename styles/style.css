@@ -748,3 +748,115 @@ body {
         align-items: stretch;
     }
 }
+/* Job Status Page */
+/* Job Status Container */
+.jobstatus-container {
+    max-width: 1800px;
+    margin: 48px auto 0 auto;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0px 4px 41px -9px rgba(0,0,0,0.25);
+    border-radius: 61px;
+    padding: 48px 48px 48px 48px;
+}
+
+/* Title */
+.jobstatus-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+/* Table Wrapper */
+.jobstatus-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table */
+.jobstatus-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    background: transparent;
+}
+
+/* Table Header */
+.jobstatus-table thead tr {
+    background: #0055A2;
+    border-radius: 36px;
+}
+
+.jobstatus-table thead tr th {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 24px 0;
+    border: none;
+    background: #0055A2;
+}
+
+.jobstatus-table thead tr th:first-child {
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+    padding-left: 48px;
+}
+.jobstatus-table thead tr th:last-child {
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+    padding-right: 48px;
+}
+
+/* Table Body Rows */
+.jobstatus-table tbody tr {
+    background: rgba(24,24,24,0.05);
+    border-radius: 36px;
+    box-shadow: none;
+}
+
+.jobstatus-table tbody tr + tr {
+    background: rgba(30,30,30,0.05);
+}
+
+.jobstatus-table tbody td {
+    padding: 24px 0;
+    color: #000;
+    font-size: 24px;
+    border: none;
+}
+
+.jobstatus-table tbody td:first-child {
+    padding-left: 48px;
+}
+.jobstatus-table tbody td:last-child {
+    padding-right: 48px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .jobstatus-container {
+        padding: 24px 8px;
+    }
+    .jobstatus-title {
+        font-size: 2rem;
+    }
+    .jobstatus-table thead tr th,
+    .jobstatus-table tbody td {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    .jobstatus-table thead tr th:first-child,
+    .jobstatus-table tbody td:first-child {
+        padding-left: 16px;
+    }
+    .jobstatus-table thead tr th:last-child,
+    .jobstatus-table tbody td:last-child {
+        padding-right: 16px;
+    }
+}
+
