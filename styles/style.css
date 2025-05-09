@@ -23,7 +23,8 @@ body {
     background-color: #f1f2f7;
     padding: 10px 0;
 }
-.home-bg{
+
+.home-bg {
     background-color: #0c1339;
 }
 
@@ -115,17 +116,19 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 20px;
-    align-items: stretch; /* Ensures all cards stretch to same height */
+    align-items: stretch;
+    /* Ensures all cards stretch to same height */
 }
 
 .job-card {
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
     background: #fff;
     display: flex;
     flex-direction: column;
-    height: 480px; /* Set your desired fixed height */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    height: 480px;
+    /* Set your desired fixed height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     font-family: 'Inter', sans-serif;
 }
 
@@ -143,7 +146,8 @@ body {
     border: 1px solid #ddd;
     border-top: none;
     font-size: 14px;
-    flex: 1 1 auto; /* Take up remaining space */
+    flex: 1 1 auto;
+    /* Take up remaining space */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -168,157 +172,160 @@ body {
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    margin: 15px auto 0 auto; /* Center horizontally */
-    width: 60%; /* Optional: control button width */
+    margin: 15px auto 0 auto;
+    /* Center horizontally */
+    width: 60%;
+    /* Optional: control button width */
 }
 
 
 
 /* Footer Section */
 
- .footer {
-            position: relative;
-            height: 276px;
-            width: 100%;
-            background-color: #f9f9f9;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            padding: 50px 70px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .footer-section {
-            margin-right: 100px;
-            margin-bottom: 30px;
-        }
-        
-        .footer-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: #000000;
-            line-height: 17px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-link {
-            display: block;
-            font-size: 12px;
-            font-weight: 400;
-            color: #000000;
-            line-height: 15px;
-            text-decoration: underline;
-            margin-bottom: 15px;
-            cursor: pointer;
-        }
-        
-        .footer-link:hover {
-            color: #0055a2;
-        }
-        
-        .footer-text {
-            font-size: 12px;
-            font-weight: 400;
-            color: #000000;
-            line-height: 15px;
-            margin-bottom: 15px;
-            white-space: pre-line;
-        }
-        
-        .social-icons {
-            position: absolute;
-            right: 70px;
-            top: 52px;
-            display: flex;
-            gap: 25px;
-        }
-        
-        .social-icon {
-            width: 45px;
-            height: 45px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-        
-        @media (max-width: 1200px) {
-            .job-cards {
-                gap: 30px;
-            }
-            
-            .job-card {
-                width: 350px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                height: auto;
-                padding: 15px;
-                border-radius: 20px;
-            }
-            
-            .nav-links {
-                margin-top: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-link {
-                font-size: 18px;
-                margin: 5px 10px;
-            }
-            
-            .separator {
-                font-size: 18px;
-            }
-            
-            .program-title {
-                font-size: 24px;
-                margin-left: 0;
-                margin-top: 10px;
-            }
-            
-            .hero-section {
-                height: 400px;
-            }
-            
-            .hero-image {
-                height: 350px;
-                width: auto;
-            }
-            
-            .job-card {
-                width: 100%;
-                max-width: 400px;
-            }
-            
-            .footer {
-                padding: 30px 20px;
-                height: auto;
-            }
-            
-            .footer-section {
-                margin-right: 40px;
-            }
-            
-            .social-icons {
-                position: relative;
-                right: auto;
-                top: auto;
-                margin-top: 20px;
-                justify-content: center;
-                width: 100%;
-            }
-        }
+.footer {
+    position: relative;
+    height: 276px;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 50px 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 15px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: #0055a2;
+}
+
+.footer-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 15px;
+    margin-bottom: 15px;
+    white-space: pre-line;
+}
+
+.social-icons {
+    position: absolute;
+    right: 70px;
+    top: 52px;
+    display: flex;
+    gap: 25px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .job-cards {
+        gap: 30px;
+    }
+
+    .job-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        margin: 5px 10px;
+    }
+
+    .separator {
+        font-size: 18px;
+    }
+
+    .program-title {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+
+    .hero-image {
+        height: 350px;
+        width: auto;
+    }
+
+    .job-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .footer-section {
+        margin-right: 40px;
+    }
+
+    .social-icons {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 .custom-navbar {
     width: 100%;
     background: #fff;
     border-radius: 50px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -395,7 +402,8 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 48px;
-    padding: 80px 0 0 105px; /* left: 105px from Figma */
+    padding: 80px 0 0 105px;
+    /* left: 105px from Figma */
     min-height: 80vh;
     background: #fff;
     border-radius: 40px;
@@ -403,7 +411,8 @@ body {
 }
 
 .aboutus-content {
-    max-width: 755px; /* width from Figma */
+    max-width: 755px;
+    /* width from Figma */
     margin-top: 20px;
 }
 
@@ -453,8 +462,10 @@ body {
     border-radius: 12px;
     padding: 32px 32px 0 32px;
     box-shadow: 0 4px 4px rgba(241, 238, 238, 0.25);
-    max-width: 1014px; /* width from Figma */
-    max-height: 676px;  /* height from Figma */
+    max-width: 1014px;
+    /* width from Figma */
+    max-height: 676px;
+    /* height from Figma */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,6 +484,7 @@ body {
         padding: 40px 0 0 20px;
         gap: 32px;
     }
+
     .aboutus-image {
         padding: 16px;
         max-width: 100%;
@@ -483,10 +495,12 @@ body {
     .aboutus-section {
         padding: 24px 0 0 0;
     }
+
     .aboutus-content h1 {
         font-size: 2rem;
         line-height: 2.5rem;
     }
+
     .aboutus-content p {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -507,8 +521,106 @@ body {
         gap: 24px;
         padding: 0 10px;
     }
+
     .footer {
         padding: 30px 0 20px 0;
         border-radius: 24px 24px 0 0;
     }
+}
+
+/*vacancy page*/
+.vacancies {
+    background: url('../images/vacancies.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar styles */
+.custom-navbar {
+    width: 95vw;
+    max-width: 1875px;
+    margin: 24px auto 0 auto;
+    background: #fff;
+    border-radius: 91px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 87px;
+}
+
+.custom-navbar .navbar-logo {
+    height: 60px;
+    margin-right: 24px;
+}
+
+.custom-navbar .navbar-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #0055A2;
+}
+
+.custom-navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.custom-navbar nav a {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-navbar nav span {
+    font-size: 25px;
+    color: #000;
+}
+
+/* Heading below navbar */
+.jobs-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 32px 0 16px 0;
+}
+
+/* Check the Applied Job Status button */
+.check-status-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.check-status-btn {
+    background: #0055AA;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 32px;
+    padding: 32px 64px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    width: 538px;
+    max-width: 90vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make only the vacancies job cards section background transparent */
+.vacancies .jobs-section {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Make each job card background semi-transparent */
+.vacancies .job-card {
+    background: rgba(255,255,255,0.85) !important;
+    box-shadow: 0 0 30px -8px rgba(0,0,0,0.18);
+    border-radius: 29px;
 }
