@@ -1,332 +1,344 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        
-        .container {
-            display: flex;
-            max-width: 900px;
-            width: 100%;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .illustration {
-            flex: 1;
-            background-color: white;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        
-        .login-form {
-            flex: 1;
-            background-color: #0055AA;
-            color: white;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        h1 {
-            font-size: 32px;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 12px 15px;
-            border: none;
-            border-radius: 50px;
-            outline: none;
-        }
-        
-        button {
-            background-color: white;
-            color: #0055AA;
-            font-weight: bold;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 50px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-            width: 100%;
-        }
-        
-        button:hover {
-            background-color: #f0f0f0;
-        }
-        
-   
-        
-        .signup-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .signup-link a {
-            color: white;
-            text-decoration: underline;
-        }
-        
-        .or-divider {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-        }
-        
-        .or-divider::before,
-        .or-divider::after {
-            content: "";
-            flex: 1;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        
-        .or-divider span {
-            padding: 0 10px;
-        }
-        
-        .file-path {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: #0055AA;
-            font-size: 10px;
-            opacity: 0.5;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                width: 90%;
-            }
-            
-            .illustration {
-                padding: 20px;
-            }
-            
-            .login-form {
-                padding: 30px;
-            }
-        }
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.illustration {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-form {
+    flex: 1;
+    background-color: #0055AA;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+
+button {
+    background-color: white;
+    color: #0055AA;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
 
 
 
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
 
-        /* Register */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        
-        .container {
-            display: flex;
-            max-width: 900px;
-            width: 100%;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .image-container {
-            flex: 1;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .image-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px dashed #cccccc;
-            border-radius: 10px;
-            color: #999999;
-            font-size: 16px;
-        }
-        
-        .register-form {
-            flex: 1;
-            background-color: #0055AA;
-            color: white;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .register-form h1 {
-            font-size: 32px;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-        
-        .form-group {
-            margin-bottom: 20px; 
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 12px 15px;
-            border: none;
-            border-radius: 50px;
-            outline: none;
-            box-sizing: border-box;
-        }
-        
-        .form-group button {
-            align-self: flex-end;
-            background-color: white;
-            color: #0055AA;
-            font-weight: bold;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 50px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        
-        .register-form button:hover {
-            background-color: #f0f0f0;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                width: 90%;
-            }
-            
-            .image-container {
-                height: 200px;
-            }
-            
-            .register-form {
-                padding: 30px;
-            }
-            
-            button {
-                align-self: center;
-                width: 100%;
-            }
-        }
+.signup-link a {
+    color: white;
+    text-decoration: underline;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.or-divider span {
+    padding: 0 10px;
+}
+
+.file-path {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #0055AA;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .illustration {
+        padding: 20px;
+    }
+
+    .login-form {
+        padding: 30px;
+    }
+}
 
 
-        .network-card {
-  position: absolute;
-  width: 404px;
-  height: 497px;
-  left: 62px;
-  top: 557px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.25);
-  border-radius: 29px;
-  font-family: 'Inter', sans-serif;
-  overflow: hidden;
+
+
+/* Register */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #cccccc;
+    border-radius: 10px;
+    color: #999999;
+    font-size: 16px;
+}
+
+.register-form {
+    flex: 1;
+    background-color: #0055AA;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.register-form h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    align-self: flex-end;
+    background-color: white;
+    color: #0055AA;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-form button:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    .register-form {
+        padding: 30px;
+    }
+
+    button {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+.register-form button[type="submit"] {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 120px;
+    align-self: flex-end;
+}
+
+.register-form .form-group:last-of-type {
+    margin-bottom: 60px;
+    /* Adjust as needed */
+}
+
+.network-card {
+    position: absolute;
+    width: 404px;
+    height: 497px;
+    left: 62px;
+    top: 557px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
 .card-header {
-  background: #0055A2;
-  border-radius: 30px 30px 0 0;
-  height: 104px;
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 16px 39px;
+    background: #0055A2;
+    border-radius: 30px 30px 0 0;
+    height: 104px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 16px 39px;
 }
 
 .card-header h2 {
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .card-body {
-  padding: 20px 26px;
+    padding: 20px 26px;
 }
 
 .description {
-  font-size: 14px;
-  color: #000;
-  line-height: 17px;
-  margin-bottom: 20px;
+    font-size: 14px;
+    color: #000;
+    line-height: 17px;
+    margin-bottom: 20px;
 }
 
 .requirements {
-  list-style: none;
-  padding-left: 0;
-  font-size: 14px;
-  color: #666060;
-  line-height: 28px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    color: #666060;
+    line-height: 28px;
 }
 
 .requirements li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
 }
 
 .requirements li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 6px;
-  height: 6px;
-  background: #666060;
-  border-radius: 50%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #666060;
+    border-radius: 50%;
 }
 
 .apply-btn {
-  position: absolute;
-  bottom: 16px;
-  left: 96px;
-  width: 212px;
-  height: 48px;
-  background: #4DB848;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 48px;
-  border-radius: 42px;
-  cursor: pointer;
+    position: absolute;
+    bottom: 16px;
+    left: 96px;
+    width: 212px;
+    height: 48px;
+    background: #4DB848;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 42px;
+    cursor: pointer;
 }
