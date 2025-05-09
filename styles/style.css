@@ -624,3 +624,127 @@ body {
     box-shadow: 0 0 30px -8px rgba(0,0,0,0.18);
     border-radius: 29px;
 }
+
+/*applyjob page*/
+
+/* Apply Job Form Styles */
+.applyjob-form-wrapper {
+    max-width: 1200px;
+    margin: 48px auto 0 auto;
+    background: transparent;
+    padding: 0 16px 48px 16px;
+}
+.applyjob-form {
+    background: rgba(255,255,255,0.95);
+    border-radius: 32px;
+    box-shadow: 0 0 30px -8px rgba(0,0,0,0.18);
+    padding: 48px 48px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.applyjob-form .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.applyjob-form label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 400;
+}
+.applyjob-form input,
+.applyjob-form select {
+    height: 56px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+    padding: 0 24px;
+    background: #fff;
+    outline: none;
+}
+.applyjob-form select {
+    appearance: none;
+    background: #fff url('../images/dropdown-1.png') no-repeat right 16px center/32px 32px;
+}
+.applyjob-form input[type="date"] {
+    padding-right: 48px;
+    background: #fff url('../images/calendar.png') no-repeat right 16px center/32px 32px;
+}
+.cv-upload-box {
+    margin-top: 8px;
+}
+.cv-upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+    background: #fafbfc;
+    padding: 32px 0;
+    text-align: center;
+    color: #888;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 8px;
+    position: relative;
+}
+.cv-upload-icon {
+    font-size: 2.5rem;
+    color: #0055A2;
+    margin-bottom: 8px;
+}
+.browse-btn {
+    margin-top: 8px;
+    background: #fff;
+    color: #0055A2;
+    border: 2px solid #0055A2;
+    border-radius: 8px;
+    padding: 6px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.cv-file-name {
+    font-size: 1rem;
+    color: #0055A2;
+    margin-top: 4px;
+}
+.applyjob-form .form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 24px;
+}
+.submit-btn {
+    background: #0055A2;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 24px;
+}
+.upload-label {
+    font-size: 1.3rem;
+    color: #000;
+}
+@media (max-width: 900px) {
+    .applyjob-form {
+        padding: 24px 8px;
+    }
+    .applyjob-form label {
+        font-size: 1.1rem;
+    }
+    .submit-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+    .form-actions {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+}

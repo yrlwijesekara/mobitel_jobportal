@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <body class="vacancies">
+    <div class="header-bg">
+        <div class="custom-navbar">
+            <div style="display: flex; align-items: center;">
+                <img src="../images/logo.png" alt="SLT Mobitel Logo" class="navbar-logo">
+                <span class="navbar-title">Training Program</span>
+            </div>
+            <div style="flex: 1"></div>
+            <nav>
+                <a href="#">Job status</a>
+                <span>|</span>
+                <a href="./applyjob.html">Apply for job</a>
+                <span>|</span>
+                <a href="./vacancies.html">jobs for you</a>
+                <span>|</span>
+                <a href="../home.html">Home</a>
+                <span>|</span>
+                <a href="./login.html">Login</a>
+            </nav>
+        </div>
+    </div>
+    <div class="applyjob-form-wrapper">
+        <form class="applyjob-form">
+            <div class="form-row">
+                <label for="jobtitle">Job Title :</label>
+                <input type="text" id="jobtitle" name="jobtitle" placeholder="e.g. Web Development Trainee" required>
+            </div>
+            <div class="form-row">
+                <label for="namewithinitials">Name with Initials :</label>
+                <input type="text" id="namewithinitials" name="namewithinitials" required>
+            </div>
+            <div class="form-row">
+                <label for="fullname">Full Name :</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-row">
+                <label for="gender">Gender :</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="contact">Contact Number :</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            <div class="form-row">
+                <label for="field">Field :</label>
+                <select id="field" name="field" required>
+                    <option value="">Select Field</option>
+                    <option>IT</option>
+                    <option>Engineering</option>
+                    <option>Finance</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Upload your CV here</label>
+                <div class="cv-upload-box">
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" style="display:none;">
+                    <div class="cv-upload-area" onclick="document.getElementById('cv').click();">
+                        <div class="cv-upload-icon">&#8682;</div>
+                        <div>Drag&Drop files here<br><span>or</span></div>
+                        <button type="button" class="browse-btn" onclick="document.getElementById('cv').click();return false;">Browse Files</button>
+                    </div>
+                    <div id="cv-file-name" class="cv-file-name"></div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit</button>
+                
+            </div>
+        </form>
+    </div>
+    <script>
+        // Show selected file name
+        document.getElementById('cv').addEventListener('change', function(e) {
+            const fileName = e.target.files[0] ? e.target.files[0].name : '';
+            document.getElementById('cv-file-name').textContent = fileName;
+        });
+        // Prevent form submit for demo
+        document.querySelector('.applyjob-form').addEventListener('submit', function(e){
+            e.preventDefault();
+            alert('Application submitted!');
+        });
+    </script>
+</body>
+</html>
