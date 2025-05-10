@@ -620,8 +620,8 @@ body {
 
 /* Make each job card background semi-transparent */
 .vacancies .job-card {
-    background: rgba(255,255,255,0.85) !important;
-    box-shadow: 0 0 30px -8px rgba(0,0,0,0.18);
+    background: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.18);
     border-radius: 29px;
 }
 
@@ -634,26 +634,30 @@ body {
     background: transparent;
     padding: 0 16px 48px 16px;
 }
+
 .applyjob-form {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 32px;
-    box-shadow: 0 0 30px -8px rgba(0,0,0,0.18);
+    box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.18);
     padding: 48px 48px 32px 48px;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
+
 .applyjob-form .form-row {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
+
 .applyjob-form label {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     color: #000;
     font-weight: 400;
 }
+
 .applyjob-form input,
 .applyjob-form select {
     height: 56px;
@@ -664,17 +668,21 @@ body {
     background: #fff;
     outline: none;
 }
+
 .applyjob-form select {
     appearance: none;
     background: #fff url('../images/dropdown-1.png') no-repeat right 16px center/32px 32px;
 }
+
 .applyjob-form input[type="date"] {
     padding-right: 48px;
     background: #fff url('../images/calendar.png') no-repeat right 16px center/32px 32px;
 }
+
 .cv-upload-box {
     margin-top: 8px;
 }
+
 .cv-upload-area {
     border: 2px dashed #ccc;
     border-radius: 16px;
@@ -687,11 +695,13 @@ body {
     margin-bottom: 8px;
     position: relative;
 }
+
 .cv-upload-icon {
     font-size: 2.5rem;
     color: #0055A2;
     margin-bottom: 8px;
 }
+
 .browse-btn {
     margin-top: 8px;
     background: #fff;
@@ -703,11 +713,13 @@ body {
     cursor: pointer;
     font-weight: 600;
 }
+
 .cv-file-name {
     font-size: 1rem;
     color: #0055A2;
     margin-top: 4px;
 }
+
 .applyjob-form .form-actions {
     display: flex;
     justify-content: center;
@@ -715,6 +727,7 @@ body {
     gap: 32px;
     margin-top: 24px;
 }
+
 .submit-btn {
     background: #0055A2;
     color: #fff;
@@ -727,34 +740,40 @@ body {
     font-weight: 500;
     margin-right: 24px;
 }
+
 .upload-label {
     font-size: 1.3rem;
     color: #000;
 }
+
 @media (max-width: 900px) {
     .applyjob-form {
         padding: 24px 8px;
     }
+
     .applyjob-form label {
         font-size: 1.1rem;
     }
+
     .submit-btn {
         width: 100%;
         margin-right: 0;
     }
+
     .form-actions {
         flex-direction: column;
         gap: 12px;
         align-items: stretch;
     }
 }
+
 /* Job Status Page */
 /* Job Status Container */
 .jobstatus-container {
     max-width: 1800px;
     margin: 48px auto 0 auto;
-    background: rgba(255,255,255,0.5);
-    box-shadow: 0px 4px 41px -9px rgba(0,0,0,0.25);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 41px -9px rgba(0, 0, 0, 0.25);
     border-radius: 61px;
     padding: 48px 48px 48px 48px;
 }
@@ -792,35 +811,34 @@ body {
 }
 
 .jobstatus-table thead tr th {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 24px 0;
-    border: none;
     background: #0055A2;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 8px;
+    border: none;
+    /* Remove border-radius here for all */
+    border-radius: 0;
 }
 
 .jobstatus-table thead tr th:first-child {
-    border-top-left-radius: 36px;
-    border-bottom-left-radius: 36px;
-    padding-left: 48px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
 }
+
 .jobstatus-table thead tr th:last-child {
-    border-top-right-radius: 36px;
-    border-bottom-right-radius: 36px;
-    padding-right: 48px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
 /* Table Body Rows */
 .jobstatus-table tbody tr {
-    background: rgba(24,24,24,0.05);
+    background: rgba(24, 24, 24, 0.05);
     border-radius: 36px;
     box-shadow: none;
 }
 
-.jobstatus-table tbody tr + tr {
-    background: rgba(30,30,30,0.05);
+.jobstatus-table tbody tr+tr {
+    background: rgba(30, 30, 30, 0.05);
 }
 
 .jobstatus-table tbody td {
@@ -833,6 +851,7 @@ body {
 .jobstatus-table tbody td:first-child {
     padding-left: 48px;
 }
+
 .jobstatus-table tbody td:last-child {
     padding-right: 48px;
 }
@@ -842,21 +861,379 @@ body {
     .jobstatus-container {
         padding: 24px 8px;
     }
+
     .jobstatus-title {
         font-size: 2rem;
     }
+
     .jobstatus-table thead tr th,
     .jobstatus-table tbody td {
         font-size: 1rem;
         padding: 12px 0;
     }
+
     .jobstatus-table thead tr th:first-child,
     .jobstatus-table tbody td:first-child {
         padding-left: 16px;
     }
+
     .jobstatus-table thead tr th:last-child,
     .jobstatus-table tbody td:last-child {
         padding-right: 16px;
     }
 }
 
+
+
+/*job creation page*/
+.topbar {
+    width: 95vw;
+    max-width: 1875px;
+    margin: 24px auto 0 auto;
+    background: #fff;
+    border-radius: 91px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 87px;
+    z-index: 100;
+    position: relative;
+    /* Not fixed */
+}
+
+.topbar img {
+    height: 60px;
+    margin-right: 24px;
+}
+
+.topbar-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #0055A2;
+}
+
+.topbar-links {
+    margin-left: auto;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.topbar-links a {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 450px;
+    height: 100vh;
+    background: #0055A2;
+    padding-top: 24px;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    /* Remove overflow-y: auto here */
+}
+
+.sidebar-links {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;   /* Center links vertically */
+    align-items: flex-start;    /* Keep links aligned to the left */
+    height: 100%;              /* Take full sidebar height */
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 18px 36px;
+    text-decoration: none;
+    gap: 18px;
+}
+
+.sidebar-link.active {
+    font-weight: 700;
+}
+
+.sidebar-link .arrow {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 24px solid #fff;
+    margin-right: 18px;
+}
+
+.sidebar-link.active .arrow {
+    border-left: 24px solid #fff;
+}
+
+.main-content {
+    margin-left: 470px;
+    margin-top: 48px;
+    padding: 0;
+}
+
+.jobcreation-card {
+    width: 1385px;
+    min-height: 900px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 62px;
+    box-shadow: 0px 4px 99px rgba(0, 0, 0, 0.10);
+    padding: 40px 48px 48px 48px;
+    margin: 0 auto;
+}
+
+.jobcreation-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.jobcreation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px 32px;
+}
+
+.jobcreation-form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.jobcreation-form label {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.jobcreation-form input,
+.jobcreation-form textarea {
+    height: 71px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    font-size: 1.3rem;
+    padding: 0 24px;
+    background: #fff;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.jobcreation-form textarea {
+    height: 165px;
+    padding: 16px 24px;
+    resize: none;
+}
+
+.jobcreation-form input[type="date"] {
+    padding-right: 48px;
+    background: #fff url('../images/calendar.png') no-repeat right 16px center/32px 32px;
+}
+
+.jobcreation-form .fullwidth {
+    grid-column: span 2;
+}
+
+.jobcreation-btn-row {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.jobcreation-btn {
+    background: #2D46CE;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 56px;
+    width: 276px;
+    height: 71px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.jobcreation-btn:hover {
+    background: #1b2e8a;
+}
+
+@media (max-width: 1600px) {
+
+    .main-content,
+    .jobcreation-card {
+        width: 98vw;
+        min-width: 0;
+    }
+
+    .jobcreation-card {
+        padding: 24px 8px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 100vw;
+        height: auto;
+        position: static;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .jobcreation-card {
+        width: 100vw;
+    }
+
+    .jobcreation-form {
+        grid-template-columns: 1fr;
+    }
+
+    .jobcreation-form .fullwidth {
+        grid-column: span 1;
+    }
+
+    .jobcreation-btn-row {
+        grid-column: 1;
+        justify-content: center;
+    }
+}
+
+/*job modification page*/
+.main-content {
+    margin-left: 470px;
+    margin-top: 48px;
+    padding: 0 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 24px 0;
+    justify-content: flex-end;   /* Move search bar to the right */
+}
+
+.search-input {
+    width: 400px;
+    height: 48px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    font-size: 22px;
+    padding: 0 20px;
+    outline: none;
+}
+
+.search-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ccc;
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px #eee;
+}
+
+.search-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Job Modification Table as Card Frames */
+.job-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 24px; /* vertical space between rows */
+    margin-top: 32px;
+}
+
+.job-table th {
+    background: #0055A2;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 8px;
+    border: none;
+    /* Remove border-radius here for all */
+    border-radius: 0;
+}
+
+.job-table td {
+    background: #fff;
+    font-size: 20px;
+    padding: 20px 8px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.08);
+}
+
+.job-table tbody tr {
+    border-radius: 32px;
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    overflow: hidden;
+}
+
+.job-table tbody tr td:first-child {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+.job-table tbody tr td:last-child {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.job-table tr:not(:last-child) td {
+    border-bottom: 2px solid #eee;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.icon-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+.job-table thead tr {
+    border-radius: 32px;
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    overflow: hidden;
+}
+
+.job-table thead tr th:first-child {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+.job-table thead tr th:last-child {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}

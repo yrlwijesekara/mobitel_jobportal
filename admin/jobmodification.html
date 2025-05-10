@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Modification</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <img src="../images/logo.png" alt="SLT Mobitel Logo">
+        <span class="topbar-title">Training Program</span>
+        <div class="topbar-links">
+            <a href="../home.html">Home</a>
+            <a href="../logout.html">Logout</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-links">
+            <a href="./jobcreation.html" class="sidebar-link"><span class="arrow"></span>Job Creation</a>
+            <a href="./jobmodification.html" class="sidebar-link active"><span class="arrow"></span>Job Modification</a>
+            <a href="./recievedcv.html" class="sidebar-link"><span class="arrow"></span>Received CVs</a>
+            <a href="#" class="sidebar-link"><span class="arrow"></span>Accepted CVs</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <form class="search-bar">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="search-btn" type="submit">
+                <img src="../images/Search.png" alt="Search">
+            </button>
+        </form>
+        <table class="job-table">
+            <thead>
+                <tr>
+                    <th>Job ID</th>
+                    <th>Job Field</th>
+                    <th>Created Date</th>
+                    <th>Status</th>
+                    <th>Modification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IT</td>
+                    <td>QA Trainee</td>
+                    <td>2023/10/14</td>
+                    <td>Rejected</td>
+                    <td>
+                        <button class="icon-btn"><img src="../images/edit.png" alt="Edit"></button>
+                        <button class="icon-btn"><img src="../images/delete.png" alt="Delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HR</td>
+                    <td>HR Trainee</td>
+                    <td>2023/09/11</td>
+                    <td>Accepted</td>
+                    <td>
+                        <button class="icon-btn"><img src="../images/edit.png" alt="Edit"></button>
+                        <button class="icon-btn"><img src="../images/delete.png" alt="Delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Finance</td>
+                    <td>Accountant</td>
+                    <td>2023/08/16</td>
+                    <td>Rejected</td>
+                    <td>
+                        <button class="icon-btn"><img src="../images/edit.png" alt="Edit"></button>
+                        <button class="icon-btn"><img src="../images/delete.png" alt="Delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IT</td>
+                    <td>Web Developer</td>
+                    <td>2023/08/02</td>
+                    <td>Accepted</td>
+                    <td>
+                        <button class="icon-btn"><img src="../images/edit.png" alt="Edit"></button>
+                        <button class="icon-btn"><img src="../images/delete.png" alt="Delete"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Add this script before the closing </body> tag -->
+    <script>
+        // Select all edit buttons in the table
+        document.querySelectorAll('.icon-btn img[alt="Edit"]').forEach(function(btn) {
+            btn.parentElement.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = './jobcreation.html';
+            });
+        });
+        document.querySelector('.topbar-links a[href="../logout.html"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = '../components/login.html';
+        });
+    </script>
+</body>
+</html>

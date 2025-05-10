@@ -68,7 +68,11 @@
             
             // Simulate login process
             alert('Login successful!');
-            window.location.href = '../home.html'; // Redirect to home page
+            if (email === "admin@admin.com" && password === "admin") {
+                window.location.href = '../admin/jobcreation.html';
+            } else {
+                window.location.href = '../home.html';
+            }
         });
     </script>
 </body>

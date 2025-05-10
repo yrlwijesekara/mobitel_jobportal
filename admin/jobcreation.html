@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1600, initial-scale=1.0">
+    <title>Job Creation</title>
+    <link href="../styles/style.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="topbar">
+        <img src="../images/logo.png" alt="SLT Mobitel Logo">
+        <span class="topbar-title">Training Program</span>
+        <div class="topbar-links">
+            <a href="../home.html">Home</a>
+            <a href="../logout.html">Logout</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-links">
+            <a href="./jobcreation.html" class="sidebar-link active"><span class="arrow"></span>Job Creation</a>
+            <a href="./jobmodification.html" class="sidebar-link"><span class="arrow"></span>Job Modification</a>
+            <a href="./recievedcv.html" class="sidebar-link"><span class="arrow"></span>Received CVs</a>
+            <a href="#" class="sidebar-link"><span class="arrow"></span>Accepted CVs</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="jobcreation-card">
+            <div class="jobcreation-title">Company Job Vacancy : Web Development Trainee</div>
+            <form class="jobcreation-form">
+                <div class="jobcreation-form-row">
+                    <label for="jobid">Job ID :</label>
+                    <input type="text" id="jobid" name="jobid">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="jobfield">Job Field :</label>
+                    <input type="text" id="jobfield" name="jobfield">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="jobposition">Job Position :</label>
+                    <input type="text" id="jobposition" name="jobposition">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="contactnumber">Contact Number :</label>
+                    <input type="text" id="contactnumber" name="contactnumber">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="background">Background :</label>
+                    <input type="text" id="background" name="background">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="salary">Salary :</label>
+                    <input type="text" id="salary" name="salary">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="duedate">Due Date :</label>
+                    <input type="date" id="duedate" name="duedate">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="companyemail">Company Email:</label>
+                    <input type="email" id="companyemail" name="companyemail">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="companylocation">Company Location:</label>
+                    <input type="text" id="companylocation" name="companylocation">
+                </div>
+                <div class="jobcreation-form-row">
+                    <label for="worktype">Work Type:</label>
+                    <input type="text" id="worktype" name="worktype">
+                </div>
+                <div class="jobcreation-form-row fullwidth">
+                    <label for="jobdescription">Job Description :</label>
+                    <textarea id="jobdescription" name="jobdescription"></textarea>
+                </div>
+                <div class="jobcreation-btn-row">
+                    <button type="submit" class="jobcreation-btn">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Add this script before the closing </body> tag -->
+    <script>
+        document.querySelector('.topbar-links a[href="../logout.html"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = '../components/login.html';
+        });
+    </script>
+</body>
+</html>
