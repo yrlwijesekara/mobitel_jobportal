@@ -950,9 +950,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    justify-content: center;   /* Center links vertically */
-    align-items: flex-start;    /* Keep links aligned to the left */
-    height: 100%;              /* Take full sidebar height */
+    justify-content: center;
+    /* Center links vertically */
+    align-items: flex-start;
+    /* Keep links aligned to the left */
+    height: 100%;
+    /* Take full sidebar height */
 }
 
 .sidebar-link {
@@ -1133,7 +1136,8 @@ body {
     display: flex;
     align-items: center;
     margin: 32px 30px 24px 0;
-    justify-content: flex-end;   /* Move search bar to the right */
+    justify-content: flex-end;
+    /* Move search bar to the right */
 }
 
 .search-input {
@@ -1169,7 +1173,8 @@ body {
 .job-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 24px; /* vertical space between rows */
+    border-spacing: 0 24px;
+    /* vertical space between rows */
     margin-top: 32px 30px;
 }
 
@@ -1189,12 +1194,12 @@ body {
     padding: 20px 8px;
     text-align: center;
     border: none;
-    box-shadow: 0px 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 .job-table tbody tr {
     border-radius: 32px;
-    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.10);
     overflow: hidden;
 }
 
@@ -1226,7 +1231,7 @@ body {
 
 .job-table thead tr {
     border-radius: 32px;
-    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.10);
     overflow: hidden;
 }
 
@@ -1241,68 +1246,79 @@ body {
 }
 
 /*recieved cv page*/
- .main-content {
-            margin-left: 470px;
-            margin-top: 48px;
-            padding: 0;
-        }
-        .cv-card {
-            width: 1341px;
-            min-height: 643px;
-            background: rgba(255,255,255,0.5);
-            box-shadow: 0px 4px 41px -9px rgba(0,0,0,0.25);
-            border-radius: 61px;
-            margin: 0 auto;
-            padding: 48px 32px 32px 32px;
-            position: relative;
-        }
-        .cv-title {
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 40px;
-            color: #000;
-            margin-bottom: 32px;
-            text-align: left;
-        }
-        .cv-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0 24px;
-        }
-        .cv-table th {
-            background: #0055A2;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-            border: none;
-            padding: 12px 0;
-            border-radius: 36px;
-        }
-        .cv-table td {
-            background: rgba(24,24,24,0.05);
-            color: #000;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 24px;
-            border: none;
-            padding: 12px 0;
-            text-align: center;
-        }
-        .cv-table tr:nth-child(even) td {
-            background: rgba(30,30,30,0.05);
-        }
-        .cv-table td:last-child, .cv-table th:last-child {
-            border-top-right-radius: 36px;
-            border-bottom-right-radius: 36px;
-        }
-        .cv-table td:first-child, .cv-table th:first-child {
-            border-top-left-radius: 36px;
-            border-bottom-left-radius: 36px;
-        }
-        .job-table thead tr {
+.main-content {
+    margin-left: 470px;
+    margin-top: 48px;
+    padding: 0;
+}
+
+.cv-card {
+    width: 1341px;
+    min-height: 643px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 41px -9px rgba(0, 0, 0, 0.25);
+    border-radius: 61px;
+    margin: 0 auto;
+    padding: 48px 32px 32px 32px;
+    position: relative;
+}
+
+.cv-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.cv-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 24px;
+}
+
+.cv-table th {
+    background: #0055A2;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    padding: 12px 0;
+    border-radius: 36px;
+}
+
+.cv-table td {
+    background: rgba(24, 24, 24, 0.05);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    border: none;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.cv-table tr:nth-child(even) td {
+    background: rgba(30, 30, 30, 0.05);
+}
+
+.cv-table td:last-child,
+.cv-table th:last-child {
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+}
+
+.cv-table td:first-child,
+.cv-table th:first-child {
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+}
+
+.job-table thead tr {
     border-radius: 32px;
-    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.10);
     overflow: hidden;
 }
 
@@ -1315,14 +1331,16 @@ body {
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
 }
+
 .cv-table thead tr {
     border-radius: 32px;
-    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.10);
     overflow: hidden;
 }
 
 .cv-table thead tr th {
-    border-radius: 0; /* Remove radius from all by default */
+    border-radius: 0;
+    /* Remove radius from all by default */
 }
 
 .cv-table thead tr th:first-child {
