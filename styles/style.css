@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 body {
@@ -76,7 +79,8 @@ body {
 }
 
 .hero-logo {
-    width: 900px;    /* Increase width as needed */
+    width: 900px;
+    /* Increase width as needed */
     max-width: 100vw;
     height: auto;
     display: block;
